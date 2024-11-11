@@ -1,0 +1,165 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.container {
+    background-image: url("../img/Oppenheimer-Wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;  
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5em;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+    color: rgb(240, 94, 36);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.8em;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: rgb(243, 221, 219);
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: rgb(90, 38, 0);
+    text-transform: uppercase;
+    text-shadow: 0 0 12px rgb(255, 249, 164);
+}
+
+ul {
+    position: relative;
+    margin: 2.6rem auto;
+    display: block;
+    text-align: center;
+}
+
+/* Styling voor de knop */
+ul li {
+    width: 180px;
+    height: 180px;
+    padding: 70px 30px;
+    background-color: rgb(216, 10, 10);
+    background-image: radial-gradient(
+        rgba(1, 1, 1, 0.89),
+        rgb(216, 10, 10)
+        );
+    border-radius: 90px;
+    margin: 0.5rem 2rem 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7em;
+    font-weight: regular;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    animation: blink 1.2s infinite, glow 4.6s ease-in-out infinite;
+}
+
+ul li:first-child {
+    margin-left: 0;
+}
+
+ul li a {
+    text-decoration: none;
+}
+ 
+.home-button {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.small-button li a {
+    font-size: 1.3rem;
+    font-weight: 500; 
+    text-align: center;
+}
+.small-button li {
+    width: 140px;
+    height: 140px;
+    padding: 50px 18px;   
+}
+
+.video-desktop {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.video-tablet {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.video-mobile {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+/* Definieer de keyframes voor de knipperende animatie */
+@keyframes blink {
+    0% {
+        color: rgb(255, 255, 255); /* Begin met witte tekst */
+    }
+    50% {
+        color: rgb(243, 40, 4); /* Halverwege veranderen we de tekstkleur */  
+    }
+    100% {
+        color: rgb(255, 255, 255); /* Terug naar witte tekst */
+    }
+}
+
+
+/* Definieer de keyframes voor de animatie van de gloeiende rand */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 3px rgb(255, 250, 204), 
+                    0 0 10px rgb(255, 250, 204),
+                    0 0 15px rgb(255, 250, 204),
+                    0 0 20px rgb(255, 250, 204);
+    }
+    50% {
+        box-shadow: 0 0 10px rgb(255, 214, 78), 
+                    0 0 20px rgb(253, 214, 78), 
+                    0 0 50px rgb(253, 214, 78), 
+                    0 0 80px rgb(253, 214, 78);
+    }
+    100% {
+        box-shadow: 0 0 3px rgb(255, 250, 204), 
+                    0 0 10px rgb(255, 250, 204),
+                    0 0 15px rgb(255, 250, 204),
+                    0 0 20px rgb(255, 250, 204);
+    }
+}
+
+/* vonkjes */
